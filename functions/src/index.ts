@@ -1,3 +1,3 @@
-import { getTotalUsers } from "./user";
+import { getUsersStats } from "./user";
 
-export { getTotalUsers };
+export { getUsersStats };

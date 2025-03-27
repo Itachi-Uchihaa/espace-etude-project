@@ -1,37 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Firebase function base url
+http://127.0.0.1:5001/espace-etude/us-central1/getTotalUsers
 
-## Getting Started
+# espace_etude (Firestore root)
 
-First, run the development server:
+## **users**
+- userId_1 (Document)
+- email: string
+- phone: string
+- userName: string
+- firstName: string
+- lastName: string
+- password: password
+- lastLogin: timestamp
+- lastLoginHistory: [timestamp] // will save information regarding session also
+- lastSubscription: timestamp
+- age: 16
+- country: string
+- region: string
+- role: string
+- enrolledCourses: [courseId_1, courseId_2]
+- registerationDate: timestamp
+- gradeLevel: string
+- gradeSchool: string
+- loginStreak: number
+- recentlyViewedCourses: [courseIds] **// need to confirm how many courses we can have in this category**
+ 
+## **courses**
+- courseId_1 (Document)
+- title: string
+- gradeLevel: number
+- description: string
+- content: [array of content]
+- teacherId: id
+- enrolledUsers: [userId_1, userId_2]
+- assignments: [assignmentId_1, assignmentId_2]
+- quizzes: [quizId_1, quizId_2]
+- noOfViews: number
+ 
+## **assignments**
+- assignmentId_1 (Document)
+- courseId: "courseId_1"
+- title: "Algebra Homework"
+- description: "Solve these algebraic equations."
+- dueDate: timestamp
+- submissions: [submissionId_1, submissionId_2]
+ 
+## **submissions**
+- submissionId_1 (Document)
+- assignmentId: "assignmentId_1"
+- userId: "userId_1"
+- submittedAt: timestamp
+- fileURL: "URL to submission file"
+- grade: 85
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **quizzes**
+- courseId: "courseId_1"
+- quizId_1 (Document)
+- title: "Algebra Quiz"
+- questions: [question1, question2]
+- timeLimit: number
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# espace-etude-project
+## **attemped_quiz**
+- courseId: "courseId_1"
+- quizId_1 (Document)
+- userId (Document)
+- title: "Algebra Quiz"
+- questions: [question1Attempt, question2Attempt]
+- completedInTime: number
+- score: number
+ 
+## **payments**
+- paymentId_1 (Document)
+- userId: "userId_1"
+- amount: 50
+- status: "paid"
+- paymentDate: timestamp

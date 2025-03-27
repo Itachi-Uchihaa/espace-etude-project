@@ -1,32 +1,32 @@
-[debug] [2025-03-22T20:00:32.110Z] ----------------------------------------------------------------------
-[debug] [2025-03-22T20:00:32.114Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
-[debug] [2025-03-22T20:00:32.114Z] CLI Version:   13.33.0
-[debug] [2025-03-22T20:00:32.114Z] Platform:      win32
-[debug] [2025-03-22T20:00:32.114Z] Node Version:  v22.14.0
-[debug] [2025-03-22T20:00:32.115Z] Time:          Sun Mar 23 2025 01:00:32 GMT+0500 (Pakistan Standard Time)
-[debug] [2025-03-22T20:00:32.115Z] ----------------------------------------------------------------------
+[debug] [2025-03-27T16:35:42.121Z] ----------------------------------------------------------------------
+[debug] [2025-03-27T16:35:42.124Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2025-03-27T16:35:42.125Z] CLI Version:   13.33.0
+[debug] [2025-03-27T16:35:42.125Z] Platform:      win32
+[debug] [2025-03-27T16:35:42.125Z] Node Version:  v22.14.0
+[debug] [2025-03-27T16:35:42.126Z] Time:          Thu Mar 27 2025 21:35:42 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-03-27T16:35:42.126Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-03-22T20:00:32.451Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-03-22T20:00:32.451Z] > authorizing via signed-in user (abidhuzaifa128@gmail.com)
+[debug] [2025-03-27T16:35:42.503Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-27T16:35:42.504Z] > authorizing via signed-in user (abidhuzaifa128@gmail.com)
 [info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2025-03-22T20:00:32.465Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-03-22T20:00:32.466Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2025-03-22T20:00:32.471Z] [hub] writing locator at C:\Users\abidh\AppData\Local\Temp\hub-espace-etude.json
-[debug] [2025-03-22T20:00:32.494Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-03-22T20:00:32.494Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-03-22T20:00:32.494Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-03-22T20:00:32.494Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2025-03-27T16:35:42.515Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-27T16:35:42.515Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-03-27T16:35:42.526Z] [hub] writing locator at C:\Users\abidh\AppData\Local\Temp\hub-espace-etude.json
+[debug] [2025-03-27T16:35:42.550Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-27T16:35:42.551Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-27T16:35:42.551Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-03-27T16:35:42.551Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
 [warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
-[debug] [2025-03-22T20:00:32.501Z] defaultcredentials: writing to file C:\Users\abidh\AppData\Roaming\firebase\abidhuzaifa128_gmail_com_application_default_credentials.json
-[debug] [2025-03-22T20:00:32.504Z] Setting GAC to C:\Users\abidh\AppData\Roaming\firebase\abidhuzaifa128_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\abidh\\AppData\\Roaming\\firebase\\abidhuzaifa128_gmail_com_application_default_credentials.json"}}
-[debug] [2025-03-22T20:00:32.506Z] Checked if tokens are valid: true, expires at: 1742675652934
-[debug] [2025-03-22T20:00:32.506Z] Checked if tokens are valid: true, expires at: 1742675652934
-[debug] [2025-03-22T20:00:32.508Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/espace-etude/adminSdkConfig [none]
-[debug] [2025-03-22T20:00:33.134Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/espace-etude/adminSdkConfig 200
-[debug] [2025-03-22T20:00:33.134Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/espace-etude/adminSdkConfig {"projectId":"espace-etude","storageBucket":"espace-etude.firebasestorage.app"}
+[debug] [2025-03-27T16:35:42.555Z] defaultcredentials: writing to file C:\Users\abidh\AppData\Roaming\firebase\abidhuzaifa128_gmail_com_application_default_credentials.json
+[debug] [2025-03-27T16:35:42.559Z] Setting GAC to C:\Users\abidh\AppData\Roaming\firebase\abidhuzaifa128_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\abidh\\AppData\\Roaming\\firebase\\abidhuzaifa128_gmail_com_application_default_credentials.json"}}
+[debug] [2025-03-27T16:35:42.561Z] Checked if tokens are valid: true, expires at: 1743096766986
+[debug] [2025-03-27T16:35:42.561Z] Checked if tokens are valid: true, expires at: 1743096766986
+[debug] [2025-03-27T16:35:42.562Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/espace-etude/adminSdkConfig [none]
+[debug] [2025-03-27T16:35:43.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/espace-etude/adminSdkConfig 200
+[debug] [2025-03-27T16:35:43.081Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/espace-etude/adminSdkConfig {"projectId":"espace-etude","storageBucket":"espace-etude.firebasestorage.app"}
 [info] i  functions: Watching "C:\Projects\espace-etude-project\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Projects\\espace-etude-project\\functions\" for Cloud Functions..."}}
-[debug] [2025-03-22T20:00:33.183Z] Validating nodejs source
-[debug] [2025-03-22T20:00:34.612Z] > [functions] package.json contents: {
+[debug] [2025-03-27T16:35:43.116Z] Validating nodejs source
+[debug] [2025-03-27T16:35:44.653Z] > [functions] package.json contents: {
   "name": "functions",
   "scripts": {
     "build": "tsc",
@@ -35,7 +35,8 @@
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
   },
   "engines": {
     "node": "22"
@@ -46,22 +47,62 @@
     "firebase-functions": "^6.0.1"
   },
   "devDependencies": {
-    "typescript": "^4.9.0",
-    "firebase-functions-test": "^3.1.0"
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
   },
   "private": true
 }
-[debug] [2025-03-22T20:00:34.613Z] Building nodejs source
-[debug] [2025-03-22T20:00:34.613Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[debug] [2025-03-27T16:35:44.653Z] Building nodejs source
+[debug] [2025-03-27T16:35:44.653Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
 [info] +  functions: Using node@22 from host. 
-[debug] [2025-03-22T20:00:34.616Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-03-22T20:00:34.626Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8433
+[debug] [2025-03-27T16:35:44.657Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T16:35:44.672Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8385
 
-[debug] [2025-03-22T20:00:35.716Z] Got response from /__/functions.yaml {"endpoints":{"getTotalUsers":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getTotalUsers"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-27T16:35:45.630Z] Got response from /__/functions.yaml {"endpoints":{"getTotalUsers":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getTotalUsers"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-27T16:35:46.576Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T16:35:46.579Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T16:35:46.582Z] File C:\Projects\espace-etude-project\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T16:35:46.584Z] File C:\Projects\espace-etude-project\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2025-03-27T16:35:47.596Z] Validating nodejs source
+[debug] [2025-03-27T16:35:48.916Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T16:35:48.917Z] Building nodejs source
+[debug] [2025-03-27T16:35:48.917Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T16:35:48.919Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T16:35:48.937Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8717
+
 [info] +  functions: Loaded functions definitions from source: getTotalUsers. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getTotalUsers."}}
 [info] +  functions[us-central1-getTotalUsers]: http function initialized (http://127.0.0.1:5001/espace-etude/us-central1/getTotalUsers). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/espace-etude/us-central1/getTotalUsers)."}}
-[debug] [2025-03-22T20:00:39.785Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-03-27T16:35:49.676Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
@@ -78,58 +119,49 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2025-03-22T20:00:49.581Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getTotalUsers-2025-03-22T20:00:49.581Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2025-03-22T20:00:49.582Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getTotalUsers-2025-03-22T20:00:49.581Z"],"workRunningCount":1}
-[debug] [2025-03-22T20:00:49.583Z] Accepted request GET /espace-etude/us-central1/getTotalUsers --> us-central1-getTotalUsers
-[debug] [2025-03-22T20:00:49.590Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2025-03-22T20:00:49.591Z] [functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/"}}
-[debug] [2025-03-22T20:00:49.613Z] [worker-pool] addWorker(us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getTotalUsers)"}}
-[debug] [2025-03-22T20:00:49.614Z] [worker-pool] Adding worker with key us-central1-getTotalUsers, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getTotalUsers, total=1"}}
-[debug] [2025-03-22T20:00:52.012Z] [runtime-status] [18580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2025-03-22T20:00:52.016Z] [runtime-status] [18580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-03-22T20:00:52.020Z] [runtime-status] [18580] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2025-03-22T20:00:52.022Z] [runtime-status] [18580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-03-22T20:00:52.614Z] [runtime-status] [18580] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Checked functions.config() {\"config\":{}}"}}
-[debug] [2025-03-22T20:00:52.616Z] [runtime-status] [18580] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
-[debug] [2025-03-22T20:00:52.618Z] [runtime-status] [18580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-03-22T20:00:52.625Z] [runtime-status] [18580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2025-03-22T20:00:52.628Z] [runtime-status] [18580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-03-22T20:00:52.628Z] [runtime-status] [18580] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
-[debug] [2025-03-22T20:00:52.635Z] [runtime-status] [18580] initializeApp(DEFAULT) {"storageBucket":"espace-etude.firebasestorage.app","projectId":"espace-etude"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] initializeApp(DEFAULT) {\"storageBucket\":\"espace-etude.firebasestorage.app\",\"projectId\":\"espace-etude\"}"}}
+[debug] [2025-03-27T16:35:49.784Z] Got response from /__/functions.yaml {"endpoints":{"getTotalUsers":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getTotalUsers"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: getTotalUsers. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getTotalUsers."}}
+[debug] [2025-03-27T16:36:43.216Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:36:43.215Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:36:43.219Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:36:43.215Z"],"workRunningCount":1}
+[debug] [2025-03-27T16:36:43.220Z] Accepted request GET /espace-etude/us-central1/getTotalUsers --> us-central1-getTotalUsers
+[debug] [2025-03-27T16:36:43.233Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-03-27T16:36:43.235Z] [functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/"}}
+[debug] [2025-03-27T16:36:43.265Z] [worker-pool] addWorker(us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getTotalUsers)"}}
+[debug] [2025-03-27T16:36:43.267Z] [worker-pool] Adding worker with key us-central1-getTotalUsers, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getTotalUsers, total=1"}}
+[debug] [2025-03-27T16:36:45.272Z] [runtime-status] [7660] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-03-27T16:36:45.273Z] [runtime-status] [7660] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:36:45.274Z] [runtime-status] [7660] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-03-27T16:36:45.275Z] [runtime-status] [7660] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:36:45.703Z] [runtime-status] [7660] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-03-27T16:36:45.703Z] [runtime-status] [7660] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-03-27T16:36:45.704Z] [runtime-status] [7660] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:36:45.711Z] [runtime-status] [7660] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-03-27T16:36:45.714Z] [runtime-status] [7660] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:36:45.715Z] [runtime-status] [7660] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-03-27T16:36:45.718Z] [runtime-status] [7660] initializeApp(DEFAULT) {"storageBucket":"espace-etude.firebasestorage.app","projectId":"espace-etude"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] initializeApp(DEFAULT) {\"storageBucket\":\"espace-etude.firebasestorage.app\",\"projectId\":\"espace-etude\"}"}}
 [warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
-[debug] [2025-03-22T20:00:52.647Z] [runtime-status] [18580] Functions runtime initialized. {"cwd":"C:\\Projects\\espace-etude-project\\functions","node_version":"22.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Functions runtime initialized. {\"cwd\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\",\"node_version\":\"22.14.0\"}"}}
-[debug] [2025-03-22T20:00:52.647Z] [runtime-status] [18580] Listening to port: \\?\pipe\fire_emu_6a17fa1e653a8b27 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [18580] Listening to port: \\\\?\\pipe\\fire_emu_6a17fa1e653a8b27"}}
-[debug] [2025-03-22T20:00:52.771Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: IDLE"}}
-[debug] [2025-03-22T20:00:52.772Z] [worker-pool] submitRequest(triggerId=us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getTotalUsers)"}}
+[debug] [2025-03-27T16:36:45.727Z] [runtime-status] [7660] Functions runtime initialized. {"cwd":"C:\\Projects\\espace-etude-project\\functions","node_version":"22.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Functions runtime initialized. {\"cwd\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\",\"node_version\":\"22.14.0\"}"}}
+[debug] [2025-03-27T16:36:45.727Z] [runtime-status] [7660] Listening to port: \\?\pipe\fire_emu_7a0baf59f9f19a93 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [7660] Listening to port: \\\\?\\pipe\\fire_emu_7a0baf59f9f19a93"}}
+[debug] [2025-03-27T16:36:45.779Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE"}}
+[debug] [2025-03-27T16:36:45.780Z] [worker-pool] submitRequest(triggerId=us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getTotalUsers)"}}
 [info] i  functions: Beginning execution of "us-central1-getTotalUsers" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Beginning execution of \"us-central1-getTotalUsers\""}}
-[debug] [2025-03-22T20:00:52.774Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: BUSY"}}
+[debug] [2025-03-27T16:36:45.780Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: BUSY"}}
 [warn] !  Google API requested!
    - URL: "https://oauth2.googleapis.com/token"
    - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
-[debug] [2025-03-22T20:00:59.978Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-getTotalUsers" in 7204.4439ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finished \"us-central1-getTotalUsers\" in 7204.4439ms"}}
-[debug] [2025-03-22T20:00:59.980Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: IDLE"}}
-[debug] [2025-03-22T20:00:59.981Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2025-03-22T20:00:59.981Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2025-03-22T20:00:59.982Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2025-03-22T20:02:50.947Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getTotalUsers-2025-03-22T20:02:50.946Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2025-03-22T20:02:50.947Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getTotalUsers-2025-03-22T20:02:50.946Z"],"workRunningCount":1}
-[debug] [2025-03-22T20:02:50.947Z] Accepted request GET /espace-etude/us-central1/getTotalUsers --> us-central1-getTotalUsers
-[debug] [2025-03-22T20:02:50.952Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2025-03-22T20:02:50.953Z] [functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/"}}
-[debug] [2025-03-22T20:02:50.954Z] [worker-pool] submitRequest(triggerId=us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getTotalUsers)"}}
-[info] i  functions: Beginning execution of "us-central1-getTotalUsers" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Beginning execution of \"us-central1-getTotalUsers\""}}
-[debug] [2025-03-22T20:02:50.956Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: BUSY"}}
-[debug] [2025-03-22T20:02:51.183Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-getTotalUsers" in 228.2427ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finished \"us-central1-getTotalUsers\" in 228.2427ms"}}
-[debug] [2025-03-22T20:02:51.186Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: IDLE"}}
-[debug] [2025-03-22T20:02:51.187Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2025-03-22T20:02:51.188Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2025-03-22T20:02:51.188Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2025-03-22T20:02:51.327Z] Functions emulator received unknown request at path /favicon.ico
-[debug] [2025-03-22T20:03:06.440Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
-[debug] [2025-03-22T20:03:07.449Z] Validating nodejs source
-[debug] [2025-03-22T20:03:09.071Z] > [functions] package.json contents: {
+[debug] [2025-03-27T16:36:47.767Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getTotalUsers" in 1986.7675ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finished \"us-central1-getTotalUsers\" in 1986.7675ms"}}
+[debug] [2025-03-27T16:36:47.768Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE"}}
+[debug] [2025-03-27T16:36:47.768Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-03-27T16:36:47.769Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-03-27T16:36:47.769Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:37:13.846Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:14.325Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:14.326Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:14.336Z] File C:\Projects\espace-etude-project\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:14.336Z] File C:\Projects\espace-etude-project\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:15.341Z] Validating nodejs source
+[debug] [2025-03-27T16:37:17.209Z] > [functions] package.json contents: {
   "name": "functions",
   "scripts": {
     "build": "tsc",
@@ -138,7 +170,8 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
   },
   "engines": {
     "node": "22"
@@ -149,21 +182,592 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
     "firebase-functions": "^6.0.1"
   },
   "devDependencies": {
-    "typescript": "^4.9.0",
-    "firebase-functions-test": "^3.1.0"
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
   },
   "private": true
 }
-[debug] [2025-03-22T20:03:09.071Z] Building nodejs source
-[debug] [2025-03-22T20:03:09.072Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[debug] [2025-03-27T16:37:17.209Z] Building nodejs source
+[debug] [2025-03-27T16:37:17.210Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
 [info] +  functions: Using node@22 from host. 
-[debug] [2025-03-22T20:03:09.073Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-03-22T20:03:09.089Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8643
+[debug] [2025-03-27T16:37:17.210Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T16:37:17.227Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-03-27T16:37:17.335Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:37:17.335Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:37:17.335Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:37:17.335Z"],"workRunningCount":1}
+[debug] [2025-03-27T16:37:17.335Z] Accepted request GET /espace-etude/us-central1/getTotalUsers --> us-central1-getTotalUsers
+[debug] [2025-03-27T16:37:17.339Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-03-27T16:37:17.339Z] [functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/"}}
+[debug] [2025-03-27T16:37:17.339Z] [worker-pool] submitRequest(triggerId=us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getTotalUsers)"}}
+[info] i  functions: Beginning execution of "us-central1-getTotalUsers" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Beginning execution of \"us-central1-getTotalUsers\""}}
+[debug] [2025-03-27T16:37:17.340Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: BUSY"}}
+[info] Serving at port 8146
 
-[debug] [2025-03-22T20:03:10.213Z] Got response from /__/functions.yaml {"endpoints":{"getTotalUsers":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getTotalUsers"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-27T16:37:17.607Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getTotalUsers" in 267.8582ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finished \"us-central1-getTotalUsers\" in 267.8582ms"}}
+[debug] [2025-03-27T16:37:17.608Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE"}}
+[debug] [2025-03-27T16:37:17.608Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-03-27T16:37:17.608Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-03-27T16:37:17.608Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:37:17.689Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2025-03-27T16:37:18.095Z] Got response from /__/functions.yaml {"endpoints":{"getTotalUsers":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getTotalUsers"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-27T16:37:20.175Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:37:20.175Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:37:20.176Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:37:20.175Z"],"workRunningCount":1}
+[debug] [2025-03-27T16:37:20.176Z] Accepted request GET /espace-etude/us-central1/getTotalUsers --> us-central1-getTotalUsers
+[debug] [2025-03-27T16:37:20.179Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-03-27T16:37:20.179Z] [functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/"}}
+[debug] [2025-03-27T16:37:20.179Z] [worker-pool] submitRequest(triggerId=us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getTotalUsers)"}}
+[info] i  functions: Beginning execution of "us-central1-getTotalUsers" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Beginning execution of \"us-central1-getTotalUsers\""}}
+[debug] [2025-03-27T16:37:20.180Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: BUSY"}}
+[debug] [2025-03-27T16:37:20.367Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getTotalUsers" in 187.122ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finished \"us-central1-getTotalUsers\" in 187.122ms"}}
+[debug] [2025-03-27T16:37:20.368Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: IDLE"}}
+[debug] [2025-03-27T16:37:20.369Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-03-27T16:37:20.369Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-03-27T16:37:20.371Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:37:20.505Z] Functions emulator received unknown request at path /favicon.ico
 [info] +  functions: Loaded functions definitions from source: getTotalUsers. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getTotalUsers."}}
-[debug] [2025-03-22T20:03:14.250Z] [worker-pool] Shutting down IDLE worker (us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-getTotalUsers)"}}
-[debug] [2025-03-22T20:03:14.251Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: FINISHING"}}
-[debug] [2025-03-22T20:03:14.277Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: exited"}}
-[debug] [2025-03-22T20:03:14.278Z] [worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-30ff6a32-863f-4e07-b346-21a2df0f2e2b]: FINISHED"}}
+[debug] [2025-03-27T16:37:22.202Z] [worker-pool] Shutting down IDLE worker (us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-getTotalUsers)"}}
+[debug] [2025-03-27T16:37:22.203Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: FINISHING"}}
+[debug] [2025-03-27T16:37:22.228Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: exited"}}
+[debug] [2025-03-27T16:37:22.229Z] [worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-17e0ce80-c947-4f7a-bd19-39774f690aa1]: FINISHED"}}
+[debug] [2025-03-27T16:37:25.032Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:37:25.032Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:37:25.033Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getTotalUsers-2025-03-27T16:37:25.032Z"],"workRunningCount":1}
+[debug] [2025-03-27T16:37:25.033Z] Accepted request GET /espace-etude/us-central1/getTotalUsers --> us-central1-getTotalUsers
+[debug] [2025-03-27T16:37:25.036Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-03-27T16:37:25.036Z] [functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getTotalUsers, mapping to path=/"}}
+[debug] [2025-03-27T16:37:25.037Z] [worker-pool] Cleaned up workers for us-central1-getTotalUsers: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-getTotalUsers: 1 --> 0"}}
+[debug] [2025-03-27T16:37:25.075Z] [worker-pool] addWorker(us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getTotalUsers)"}}
+[debug] [2025-03-27T16:37:25.077Z] [worker-pool] Adding worker with key us-central1-getTotalUsers, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getTotalUsers, total=1"}}
+[debug] [2025-03-27T16:37:26.872Z] [runtime-status] [6504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-03-27T16:37:26.874Z] [runtime-status] [6504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:37:26.874Z] [runtime-status] [6504] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-03-27T16:37:26.875Z] [runtime-status] [6504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:37:27.305Z] [runtime-status] [6504] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-03-27T16:37:27.305Z] [runtime-status] [6504] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-03-27T16:37:27.306Z] [runtime-status] [6504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:37:27.312Z] [runtime-status] [6504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-03-27T16:37:27.315Z] [runtime-status] [6504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T16:37:27.315Z] [runtime-status] [6504] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-03-27T16:37:27.318Z] [runtime-status] [6504] initializeApp(DEFAULT) {"storageBucket":"espace-etude.firebasestorage.app","projectId":"espace-etude"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] initializeApp(DEFAULT) {\"storageBucket\":\"espace-etude.firebasestorage.app\",\"projectId\":\"espace-etude\"}"}}
+[debug] [2025-03-27T16:37:27.327Z] [runtime-status] [6504] Functions runtime initialized. {"cwd":"C:\\Projects\\espace-etude-project\\functions","node_version":"22.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Functions runtime initialized. {\"cwd\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\",\"node_version\":\"22.14.0\"}"}}
+[debug] [2025-03-27T16:37:27.328Z] [runtime-status] [6504] Listening to port: \\?\pipe\fire_emu_19a7018052dbc0e4 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[runtime-status] [6504] Listening to port: \\\\?\\pipe\\fire_emu_19a7018052dbc0e4"}}
+[debug] [2025-03-27T16:37:27.390Z] [worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: IDLE"}}
+[debug] [2025-03-27T16:37:27.390Z] [worker-pool] submitRequest(triggerId=us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getTotalUsers)"}}
+[info] i  functions: Beginning execution of "us-central1-getTotalUsers" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Beginning execution of \"us-central1-getTotalUsers\""}}
+[debug] [2025-03-27T16:37:27.391Z] [worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: BUSY"}}
+[warn] !  Google API requested!
+   - URL: "https://oauth2.googleapis.com/token"
+   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
+[debug] [2025-03-27T16:37:29.391Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getTotalUsers" in 2000.7111ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finished \"us-central1-getTotalUsers\" in 2000.7111ms"}}
+[debug] [2025-03-27T16:37:29.394Z] [worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: IDLE"}}
+[debug] [2025-03-27T16:37:29.395Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-03-27T16:37:29.396Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-03-27T16:37:29.397Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T16:37:29.551Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2025-03-27T16:37:33.284Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:33.700Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:33.701Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T16:37:34.705Z] Validating nodejs source
+[debug] [2025-03-27T16:37:36.326Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T16:37:36.326Z] Building nodejs source
+[debug] [2025-03-27T16:37:36.326Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T16:37:36.327Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T16:37:36.339Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8800
+
+[debug] [2025-03-27T16:37:37.159Z] Got response from /__/functions.yaml {"endpoints":{"getTotalUsers":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getTotalUsers"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: getTotalUsers. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getTotalUsers."}}
+[debug] [2025-03-27T16:37:41.191Z] [worker-pool] Shutting down IDLE worker (us-central1-getTotalUsers) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-getTotalUsers)"}}
+[debug] [2025-03-27T16:37:41.191Z] [worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: FINISHING"}}
+[debug] [2025-03-27T16:37:41.232Z] [worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: exited"}}
+[debug] [2025-03-27T16:37:41.232Z] [worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getTotalUsers"},"extension":{},"message":"[worker-us-central1-getTotalUsers-435ab497-f3f8-4480-8b9f-3ffa074fbf45]: FINISHED"}}
+[debug] [2025-03-27T17:33:25.415Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:33:25.871Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:33:25.871Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:33:25.877Z] File C:\Projects\espace-etude-project\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:33:25.879Z] File C:\Projects\espace-etude-project\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:33:26.883Z] Validating nodejs source
+[debug] [2025-03-27T17:33:28.874Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:33:28.875Z] Building nodejs source
+[debug] [2025-03-27T17:33:28.875Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:33:28.876Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:33:28.894Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8885
+
+[debug] [2025-03-27T17:33:29.938Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2025-03-27T17:34:15.650Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:16.005Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:16.007Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:17.015Z] Validating nodejs source
+[debug] [2025-03-27T17:34:18.504Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:34:18.504Z] Building nodejs source
+[debug] [2025-03-27T17:34:18.504Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:34:18.505Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:34:18.516Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8088
+
+[debug] [2025-03-27T17:34:19.392Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2025-03-27T17:34:30.003Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:30.467Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:30.467Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:31.495Z] Validating nodejs source
+[debug] [2025-03-27T17:34:32.901Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:34:32.901Z] Building nodejs source
+[debug] [2025-03-27T17:34:32.902Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:34:32.903Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:34:32.919Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8719
+
+[debug] [2025-03-27T17:34:33.509Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:33.803Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-27T17:34:33.833Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:33.834Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:34.837Z] Validating nodejs source
+[debug] [2025-03-27T17:34:36.224Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:34:36.224Z] Building nodejs source
+[debug] [2025-03-27T17:34:36.224Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:34:36.225Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:34:36.235Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8071
+
+[debug] [2025-03-27T17:34:37.150Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2025-03-27T17:34:44.542Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:44.921Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:44.925Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:34:45.939Z] Validating nodejs source
+[debug] [2025-03-27T17:34:47.582Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:34:47.583Z] Building nodejs source
+[debug] [2025-03-27T17:34:47.583Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:34:47.586Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:34:47.605Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8508
+
+[debug] [2025-03-27T17:34:48.445Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2025-03-27T17:43:24.305Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:43:24.305Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:43:24.305Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:43:24.305Z"],"workRunningCount":1}
+[debug] [2025-03-27T17:43:24.307Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:43:38.521Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:43:39.534Z] Validating nodejs source
+[debug] [2025-03-27T17:43:42.013Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:43:42.014Z] Building nodejs source
+[debug] [2025-03-27T17:43:42.014Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:43:42.014Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:43:42.026Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8774
+
+[debug] [2025-03-27T17:43:42.999Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2025-03-27T17:43:50.941Z] File C:\Projects\espace-etude-project\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:43:51.239Z] File C:\Projects\espace-etude-project\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:43:51.239Z] File C:\Projects\espace-etude-project\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:43:52.246Z] Validating nodejs source
+[debug] [2025-03-27T17:43:53.854Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:43:53.855Z] Building nodejs source
+[debug] [2025-03-27T17:43:53.855Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:43:53.855Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:43:53.866Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[debug] [2025-03-27T17:43:53.874Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:43:53.873Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:43:53.874Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:43:53.873Z"],"workRunningCount":1}
+[debug] [2025-03-27T17:43:53.875Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:43:53.975Z] Functions emulator received unknown request at path /favicon.ico
+[info] Serving at port 8914
+
+[debug] [2025-03-27T17:43:54.708Z] Got response from /__/functions.yaml {"endpoints":{"getUsersStats":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getUsersStats"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: getUsersStats. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getUsersStats."}}
+[info] +  functions[us-central1-getUsersStats]: http function initialized (http://127.0.0.1:5001/espace-etude/us-central1/getUsersStats). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/espace-etude/us-central1/getUsersStats)."}}
+[debug] [2025-03-27T17:48:14.588Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:48:14.588Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:48:14.590Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:48:14.588Z"],"workRunningCount":1}
+[debug] [2025-03-27T17:48:14.590Z] Accepted request GET /espace-etude/us-central1/getUsersStats?groupBy=grade --> us-central1-getUsersStats
+[debug] [2025-03-27T17:48:14.601Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-03-27T17:48:14.602Z] [functions] Got req.url=/espace-etude/us-central1/getUsersStats?groupBy=grade, mapping to path=/?groupBy=grade {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getUsersStats?groupBy=grade, mapping to path=/?groupBy=grade"}}
+[debug] [2025-03-27T17:48:14.602Z] [worker-pool] Cleaned up workers for us-central1-getTotalUsers: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-getTotalUsers: 1 --> 0"}}
+[debug] [2025-03-27T17:48:14.622Z] [worker-pool] addWorker(us-central1-getUsersStats) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getUsersStats)"}}
+[debug] [2025-03-27T17:48:14.622Z] [worker-pool] Adding worker with key us-central1-getUsersStats, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getUsersStats, total=1"}}
+[debug] [2025-03-27T17:48:16.518Z] [runtime-status] [7236] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-03-27T17:48:16.519Z] [runtime-status] [7236] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T17:48:16.520Z] [runtime-status] [7236] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-03-27T17:48:16.521Z] [runtime-status] [7236] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T17:48:16.970Z] [runtime-status] [7236] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-03-27T17:48:16.970Z] [runtime-status] [7236] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-03-27T17:48:16.972Z] [runtime-status] [7236] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T17:48:16.979Z] [runtime-status] [7236] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-03-27T17:48:16.982Z] [runtime-status] [7236] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-03-27T17:48:16.982Z] [runtime-status] [7236] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Projects\\espace-etude-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-03-27T17:48:16.985Z] [runtime-status] [7236] initializeApp(DEFAULT) {"storageBucket":"espace-etude.firebasestorage.app","projectId":"espace-etude"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] initializeApp(DEFAULT) {\"storageBucket\":\"espace-etude.firebasestorage.app\",\"projectId\":\"espace-etude\"}"}}
+[debug] [2025-03-27T17:48:16.993Z] [runtime-status] [7236] Functions runtime initialized. {"cwd":"C:\\Projects\\espace-etude-project\\functions","node_version":"22.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Functions runtime initialized. {\"cwd\":\"C:\\\\Projects\\\\espace-etude-project\\\\functions\",\"node_version\":\"22.14.0\"}"}}
+[debug] [2025-03-27T17:48:16.994Z] [runtime-status] [7236] Listening to port: \\?\pipe\fire_emu_5144555d97329caf {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[runtime-status] [7236] Listening to port: \\\\?\\pipe\\fire_emu_5144555d97329caf"}}
+[debug] [2025-03-27T17:48:17.082Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: IDLE"}}
+[debug] [2025-03-27T17:48:17.083Z] [worker-pool] submitRequest(triggerId=us-central1-getUsersStats) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getUsersStats)"}}
+[info] i  functions: Beginning execution of "us-central1-getUsersStats" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Beginning execution of \"us-central1-getUsersStats\""}}
+[debug] [2025-03-27T17:48:17.084Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: BUSY"}}
+[warn] !  Google API requested!
+   - URL: "https://oauth2.googleapis.com/token"
+   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
+[debug] [2025-03-27T17:48:19.254Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getUsersStats" in 2170.7156ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finished \"us-central1-getUsersStats\" in 2170.7156ms"}}
+[debug] [2025-03-27T17:48:19.255Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: IDLE"}}
+[debug] [2025-03-27T17:48:19.255Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-03-27T17:48:19.256Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-03-27T17:48:19.256Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:48:19.356Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2025-03-27T17:51:29.575Z] [work-queue] {"queuedWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:51:29.575Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:51:29.575Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/espace-etude/us-central1/getUsersStats-2025-03-27T17:51:29.575Z"],"workRunningCount":1}
+[debug] [2025-03-27T17:51:29.575Z] Accepted request GET /espace-etude/us-central1/getUsersStats?groupBy=city --> us-central1-getUsersStats
+[debug] [2025-03-27T17:51:29.578Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-03-27T17:51:29.579Z] [functions] Got req.url=/espace-etude/us-central1/getUsersStats?groupBy=city, mapping to path=/?groupBy=city {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/espace-etude/us-central1/getUsersStats?groupBy=city, mapping to path=/?groupBy=city"}}
+[debug] [2025-03-27T17:51:29.579Z] [worker-pool] submitRequest(triggerId=us-central1-getUsersStats) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getUsersStats)"}}
+[info] i  functions: Beginning execution of "us-central1-getUsersStats" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Beginning execution of \"us-central1-getUsersStats\""}}
+[debug] [2025-03-27T17:51:29.579Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: BUSY"}}
+[debug] [2025-03-27T17:51:29.843Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-getUsersStats" in 264.1094ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finished \"us-central1-getUsersStats\" in 264.1094ms"}}
+[debug] [2025-03-27T17:51:29.845Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: IDLE"}}
+[debug] [2025-03-27T17:51:29.846Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-03-27T17:51:29.847Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-03-27T17:51:29.848Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-03-27T17:52:09.923Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:10.278Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:10.283Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:11.293Z] Validating nodejs source
+[debug] [2025-03-27T17:52:13.009Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:52:13.009Z] Building nodejs source
+[debug] [2025-03-27T17:52:13.009Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:52:13.010Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:52:13.023Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8891
+
+[debug] [2025-03-27T17:52:13.491Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:13.798Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:13.800Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:13.937Z] Got response from /__/functions.yaml {"endpoints":{"getUsersStats":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getUsersStats"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-03-27T17:52:14.808Z] Validating nodejs source
+[debug] [2025-03-27T17:52:16.478Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:52:16.478Z] Building nodejs source
+[debug] [2025-03-27T17:52:16.478Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:52:16.481Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:52:16.492Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8810
+
+[debug] [2025-03-27T17:52:17.483Z] Got response from /__/functions.yaml {"endpoints":{"getUsersStats":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getUsersStats"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: getUsersStats. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getUsersStats."}}
+[debug] [2025-03-27T17:52:17.995Z] [worker-pool] Shutting down IDLE worker (us-central1-getUsersStats) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-getUsersStats)"}}
+[debug] [2025-03-27T17:52:17.995Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: FINISHING"}}
+[debug] [2025-03-27T17:52:18.012Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: exited"}}
+[debug] [2025-03-27T17:52:18.012Z] [worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getUsersStats"},"extension":{},"message":"[worker-us-central1-getUsersStats-fd51969d-f1b0-422d-b860-21421a64d6f9]: FINISHED"}}
+[info] +  functions: Loaded functions definitions from source: getUsersStats. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getUsersStats."}}
+[debug] [2025-03-27T17:52:40.964Z] File C:\Projects\espace-etude-project\functions\src\user.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\src\\user.ts changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:41.330Z] File C:\Projects\espace-etude-project\functions\lib\user.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js.map changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:41.330Z] File C:\Projects\espace-etude-project\functions\lib\user.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projects\\espace-etude-project\\functions\\lib\\user.js changed, reloading triggers"}}
+[debug] [2025-03-27T17:52:42.346Z] Validating nodejs source
+[debug] [2025-03-27T17:52:43.906Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "watch:serve": "concurrently \"npm run build:watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-03-27T17:52:43.906Z] Building nodejs source
+[debug] [2025-03-27T17:52:43.906Z] Failed to find version of module node: reached end of search path C:\Projects\espace-etude-project\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-03-27T17:52:43.907Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-03-27T17:52:43.921Z] Found firebase-functions binary at 'C:\Projects\espace-etude-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8504
+
+[debug] [2025-03-27T17:52:44.721Z] Got response from /__/functions.yaml {"endpoints":{"getUsersStats":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"getUsersStats"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: getUsersStats. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getUsersStats."}}
