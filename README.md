@@ -13,17 +13,49 @@ http://127.0.0.1:5001/espace-etude/us-central1/getTotalUsers
 - password: password
 - lastLogin: timestamp
 - lastLoginHistory: [timestamp] // will save information regarding session also
-- lastSubscription: timestamp
+- lastSubscription: [
+  {
+    timestamp: timestamp,
+    amount: number
+  }
+]
 - age: 16
 - country: string
 - region: string
 - role: string
-- enrolledCourses: [courseId_1, courseId_2]
 - registerationDate: timestamp
-- gradeLevel: string
-- gradeSchool: string
 - loginStreak: number
-- recentlyViewedCourses: [courseIds] **// need to confirm how many courses we can have in this category**
+- profiles: {
+  profileId_1: {
+    profileName: string
+    avatar: string
+    gradeLevel: string
+    gradeSchool: string
+    enrolledCourses: [courseId_1, courseId_2]
+    recentlyViewedCourses: [courseIds] // max 10 courses
+    progress: {
+      courseId_1: {
+        completedLessons: number
+        totalLessons: number
+        lastAccessed: timestamp
+      }
+    }
+    assignments: {
+      assignmentId_1: {
+        status: "pending" | "submitted" | "graded"
+        submissionDate: timestamp
+        grade: number
+      }
+    }
+    quizzes: {
+      quizId_1: {
+        attempts: number
+        highestScore: number
+        lastAttempt: timestamp
+      }
+    }
+  }
+}
  
 ## **courses**
 - courseId_1 (Document)
@@ -49,6 +81,7 @@ http://127.0.0.1:5001/espace-etude/us-central1/getTotalUsers
 - submissionId_1 (Document)
 - assignmentId: "assignmentId_1"
 - userId: "userId_1"
+- profileId: "profileId_1"
 - submittedAt: timestamp
 - fileURL: "URL to submission file"
 - grade: 85
@@ -64,6 +97,7 @@ http://127.0.0.1:5001/espace-etude/us-central1/getTotalUsers
 - courseId: "courseId_1"
 - quizId_1 (Document)
 - userId (Document)
+- profileId: "profileId_1"
 - title: "Algebra Quiz"
 - questions: [question1Attempt, question2Attempt]
 - completedInTime: number
