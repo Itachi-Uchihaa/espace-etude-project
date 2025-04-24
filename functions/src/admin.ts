@@ -266,20 +266,47 @@ interface ContentModerationRequest {
   reason?: string;
 }
 
+// New interfaces for analytics
+interface GeographicStats {
+  region: string;
+  city: string;
+  studentCount: number;
+}
+
+interface UsageStats {
+  date: string;
+  activeUsers: number;
+  courseViews: number;
+}
+
+interface GradeLevelStats {
+  gradeLevel: string;
+  count: number;
+}
+
+interface WeeklyReportData {
+  userId: string;
+  email: string;
+  name: string;
+  gradeLevel: string;
+  lastLogin: admin.firestore.Timestamp;
+  coursesEnrolled: number;
+  assignmentsCompleted: number;
+  averageScore: number;
+}
+
 // Middleware to check if user is admin
-const isAdmin = async (request: { auth?: { uid: string } }) => {
-//   if (!request.auth) {
-//     throw new HttpsError('unauthenticated', 'User must be authenticated');
-//   }
+const isAdmin = async (request: { auth?: { uid: string } }): Promise<boolean> => {
+  if (!request.auth) {
+    return false;
+  }
 
-//   const userDoc = await admin.firestore()
-//     .collection('users')
-//     .doc(request.auth.uid)
-//     .get();
+  const userDoc = await admin.firestore()
+    .collection('users')
+    .doc(request.auth.uid)
+    .get();
 
-//   if (!userDoc.exists || userDoc.data()?.role !== 'admin') {
-//     throw new HttpsError('permission-denied', 'User must be an admin');
-//   }
+  return userDoc.exists && userDoc.data()?.role === 'admin';
 };
 
 // User Management APIs
@@ -617,4 +644,243 @@ export const moderateContent = onCall<ContentModerationRequest>(async (request) 
   }
   
   return { success: true };
+});
+
+/**
+ * Get geographic distribution of students
+ */
+export const getGeographicDistribution = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  if (!(await isAdmin(request))) {
+    throw new HttpsError('permission-denied', 'User must be an admin');
+  }
+
+  const usersSnapshot = await admin.firestore().collection('users')
+    .where('role', '==', 'student')
+    .get();
+
+  const stats: GeographicStats[] = [];
+  const regionMap = new Map<string, number>();
+  const cityMap = new Map<string, number>();
+
+  for (const doc of usersSnapshot.docs) {
+    const data = doc.data();
+    if (data.region && data.city) {
+      // Update region stats
+      const regionCount = regionMap.get(data.region) || 0;
+      regionMap.set(data.region, regionCount + 1);
+
+      // Update city stats
+      const cityCount = cityMap.get(data.city) || 0;
+      cityMap.set(data.city, cityCount + 1);
+    }
+  }
+
+  // Convert maps to array format
+  for (const [region, count] of regionMap.entries()) {
+    stats.push({ region, city: '', studentCount: count });
+  }
+
+  for (const [city, count] of cityMap.entries()) {
+    stats.push({ region: '', city, studentCount: count });
+  }
+
+  return { stats };
+});
+
+/**
+ * Get usage trends and statistics
+ */
+export const getUsageTrends = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  if (!(await isAdmin(request))) {
+    throw new HttpsError('permission-denied', 'User must be an admin');
+  }
+
+  const thirtyDaysAgo = new Date();
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+
+  const usersSnapshot = await admin.firestore().collection('users')
+    .where('role', '==', 'student')
+    .get();
+
+  const usageStats: UsageStats[] = [];
+  const dateMap = new Map<string, { activeUsers: number; courseViews: number }>();
+
+  for (const doc of usersSnapshot.docs) {
+    const data = doc.data();
+    if (data.lastLoginHistory) {
+      for (const login of data.lastLoginHistory) {
+        const date = login.toDate().toISOString().split('T')[0];
+        const current = dateMap.get(date) || { activeUsers: 0, courseViews: 0 };
+        current.activeUsers++;
+        dateMap.set(date, current);
+      }
+    }
+  }
+
+  // Get course views
+  const coursesSnapshot = await admin.firestore().collection('courses').get();
+  for (const doc of coursesSnapshot.docs) {
+    const data = doc.data();
+    if (data.noOfViews) {
+      const date = new Date().toISOString().split('T')[0];
+      const current = dateMap.get(date) || { activeUsers: 0, courseViews: 0 };
+      current.courseViews += data.noOfViews;
+      dateMap.set(date, current);
+    }
+  }
+
+  // Convert to array format
+  for (const [date, stats] of dateMap.entries()) {
+    usageStats.push({
+      date,
+      activeUsers: stats.activeUsers,
+      courseViews: stats.courseViews
+    });
+  }
+
+  return { usageStats };
+});
+
+/**
+ * Get grade level distribution
+ */
+export const getGradeLevelDistribution = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  if (!(await isAdmin(request))) {
+    throw new HttpsError('permission-denied', 'User must be an admin');
+  }
+
+  const usersSnapshot = await admin.firestore().collection('users')
+    .where('role', '==', 'student')
+    .get();
+
+  const gradeLevelMap = new Map<string, number>();
+  const stats: GradeLevelStats[] = [];
+
+  for (const doc of usersSnapshot.docs) {
+    const data = doc.data();
+    if (data.gradeLevel) {
+      const count = gradeLevelMap.get(data.gradeLevel) || 0;
+      gradeLevelMap.set(data.gradeLevel, count + 1);
+    }
+  }
+
+  for (const [gradeLevel, count] of gradeLevelMap.entries()) {
+    stats.push({ gradeLevel, count });
+  }
+
+  return { stats };
+});
+
+/**
+ * Generate weekly report for a student
+ */
+export const generateWeeklyReport = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  if (!(await isAdmin(request))) {
+    throw new HttpsError('permission-denied', 'User must be an admin');
+  }
+
+  const { userId } = request.data;
+  if (!userId) {
+    throw new HttpsError('invalid-argument', 'User ID is required');
+  }
+
+  const userDoc = await admin.firestore().collection('users').doc(userId).get();
+  if (!userDoc.exists) {
+    throw new HttpsError('not-found', 'User not found');
+  }
+
+  const userData = userDoc.data();
+  const oneWeekAgo = new Date();
+  oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+  // Get assignments completed in the last week
+  const assignmentsSnapshot = await admin.firestore()
+    .collection('submissions')
+    .where('userId', '==', userId)
+    .where('submittedAt', '>=', admin.firestore.Timestamp.fromDate(oneWeekAgo))
+    .get();
+
+  const assignmentsCompleted = assignmentsSnapshot.size;
+  let totalScore = 0;
+  for (const doc of assignmentsSnapshot.docs) {
+    const data = doc.data();
+    if (data.grade) {
+      totalScore += data.grade;
+    }
+  }
+
+  const averageScore = assignmentsCompleted > 0 ? totalScore / assignmentsCompleted : 0;
+
+  const report: WeeklyReportData = {
+    userId,
+    email: userData?.email || '',
+    name: `${userData?.firstName || ''} ${userData?.lastName || ''}`,
+    gradeLevel: userData?.gradeLevel || 'N/A',
+    lastLogin: userData?.lastLogin || admin.firestore.Timestamp.now(),
+    coursesEnrolled: userData?.enrolledCourses?.length || 0,
+    assignmentsCompleted,
+    averageScore
+  };
+
+  return { report };
+});
+
+/**
+ * Export student data
+ */
+export const exportStudentData = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  if (!(await isAdmin(request))) {
+    throw new HttpsError('permission-denied', 'User must be an admin');
+  }
+
+  const { userId } = request.data;
+  if (!userId) {
+    throw new HttpsError('invalid-argument', 'User ID is required');
+  }
+
+  const userDoc = await admin.firestore().collection('users').doc(userId).get();
+  if (!userDoc.exists) {
+    throw new HttpsError('not-found', 'User not found');
+  }
+
+  const userData = userDoc.data();
+  
+  // Get all related data
+  const [assignmentsSnapshot, quizzesSnapshot, coursesSnapshot] = await Promise.all([
+    admin.firestore().collection('submissions').where('userId', '==', userId).get(),
+    admin.firestore().collection('attempted_quiz').where('userId', '==', userId).get(),
+    admin.firestore().collection('courses').where('enrolledUsers', 'array-contains', userId).get()
+  ]);
+
+  const exportData = {
+    userInfo: {
+      ...userData,
+      password: undefined // Remove sensitive data
+    },
+    assignments: assignmentsSnapshot.docs.map(doc => doc.data()),
+    quizzes: quizzesSnapshot.docs.map(doc => doc.data()),
+    enrolledCourses: coursesSnapshot.docs.map(doc => doc.data())
+  };
+
+  return { exportData };
 }); 

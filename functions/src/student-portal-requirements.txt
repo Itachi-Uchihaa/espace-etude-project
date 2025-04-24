@@ -1,9 +1,9 @@
 # STUDENT PORTAL PAGES - API IMPLEMENTATION STATUS
 
-## 1. Login Page
-- [NOT DONE] Login form (username/password)
-- [NOT DONE] "Remember me" option
-- [NOT DONE] Password recovery link
+## 1. Login Page // will handle this in frontend using firebase sdk
+-  Login form (username/password)
+-  "Remember me" option
+-  Password recovery link
 
 ## 2. Personalized Student Dashboard
 - [DONE] Overall progress bar: `getProgress`
@@ -50,8 +50,8 @@
 - [DONE] Subscription status: `updateUser`
 
 ## 10. Support/Contact
-- [NOT DONE] Simple form to contact the administrator
-- [NOT DONE] Basic FAQ
+- Simple form to contact the administrator will handle it in frontend
+- Basic FAQ
 
 ## SUMMARY OF IMPLEMENTED APIS
 
@@ -73,19 +73,3 @@
 
 ### User Management
 - `updateUser`: Updates user details including grade level and subscription status
-
-## PENDING API IMPLEMENTATIONS
-
-### Authentication
-- Login functionality
-- Password recovery
-- Remember me option
-
-### AI Assistant
-- Chat functionality
-- Image upload
-- Contextual help
-
-### Support
-- Contact form
-- FAQ system 
