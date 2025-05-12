@@ -16,7 +16,6 @@ export default function HomePage() {
     const checkUser = async ()=>{
       try{
         const user = await checkAuth();
-        console.log('---------user-----------', user);
         if(user){
           router.push('/admin');
         }
@@ -50,100 +49,119 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Sign in to your account
-          </h2>
+    <div className="max-h-screen bg-white flex justify-center items-center">
+      <div className="w-full max-w-[1728px] h-full relative flex flex-col lg:flex-row">
+        {/* Left side - Login Form */}
+        <div className="flex w-full flex-1">
+          <div className='flex flex-col justify-around w-[75%] m-auto'>
+            <img
+              className="w-[120px] h-auto lg:w-[169px]"
+              alt="L space logo"
+              src="https://c.animaapp.com/majiz5gqWthSjn/img/l-space-logo-removebg-preview-1.png"
+            />
+
+            <div className="flex flex-col items-start gap-3 w-full">
+              <h1 className="text-4xl lg:text-[55px] font-bold text-[#212121] leading-tight">
+                Welcome Back!
+              </h1>
+              <p className="text-xl lg:text-2xl font-semibold text-[#9a9a9a]">
+                Log in to access the dashboard
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-around">
+              <form onSubmit={handleEmailLogin} className="flex flex-col w-full gap-8">
+                <div className="flex flex-col w-full gap-6">
+                  <div className="flex flex-col gap-1 w-full">
+                    <label className="font-semibold text-secondarytext text-base">
+                      Email
+                    </label>
+                    <div className="flex items-center gap-3 p-4 bg-accentsfor-borders-secondary-background rounded-lg bg-inputColor">
+                      <img
+                        className="w-6 h-4"
+                        alt="Email icon"
+                        src="https://c.animaapp.com/majiz5gqWthSjn/img/vector-1.svg"
+                      />
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter your email"
+                        className="w-full bg-transparent text-lg text-[#9b9b9b] outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-3 w-full">
+                    <label className="font-semibold text-secondary text-base">
+                      Password
+                    </label>
+                    <div className="flex items-center gap-3 p-4 bg-accentsfor-borders-secondary-background rounded-lg">
+                      <img
+                        className="w-6 h-6"
+                        alt="Password icon"
+                        src="https://c.animaapp.com/majiz5gqWthSjn/img/vector.svg"
+                      />
+                      <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Enter password"
+                        className="w-full bg-transparent text-lg text-[#9b9b9b] outline-none"
+                      />
+                      <img
+                        className="w-6 h-4 cursor-pointer"
+                        alt="Show password"
+                        src="https://c.animaapp.com/majiz5gqWthSjn/img/vector-2.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  className="text-right text-primary text-xl font-bold"
+                >
+                  Forgot password?
+                </button>
+
+                <button
+                  type="submit"
+                  className="w-full py-4 bg-primary rounded-lg text-white text-2xl font-semibold hover:bg-primary/90 transition-colors"
+                >
+                  Login
+                </button>
+              </form>
+
+              <div className="flex items-center gap-4 w-full">
+                <div className="flex-1 h-px bg-[#9b9b9b]"></div>
+                <span className="text-2xl text-[#9b9b9b]">Or</span>
+                <div className="flex-1 h-px bg-[#9b9b9b]"></div>
+              </div>
+
+              <button
+                onClick={handleGoogleLogin}
+                className="flex items-center justify-center gap-4 w-full p-4 bg-accentsfor-borders-secondary-background rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <img
+                  className="w-9 h-9"
+                  alt="Google icon"
+                  src="https://c.animaapp.com/majiz5gqWthSjn/img/image-17.png"
+                />
+                <span className="text-2xl font-semibold text-secondary">
+                  Continue with Google
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
-        <form className="mt-8 space-y-6" onSubmit={handleEmailLogin}>
-          {error && (
-            <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded">
-              {error}
-            </div>
-          )}
-          <div className="rounded-md shadow-sm -space-y-px">
-            <div>
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
-                placeholder="Email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="password" className="sr-only">
-                Password
-              </label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="current-password"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-          </div>
 
-          <div>
-            <button
-              type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            >
-              Sign in
-            </button>
-          </div>
-        </form>
-
-        <div className="mt-6">
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-300" />
-            </div>
-            <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-gray-50 text-gray-500">Or continue with</span>
-            </div>
-          </div>
-
-          <div className="mt-6">
-            <button
-              onClick={handleGoogleLogin}
-              className="w-full flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-            >
-              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24">
-                <path
-                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-                  fill="#4285F4"
-                />
-                <path
-                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-                  fill="#34A853"
-                />
-                <path
-                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
-                  fill="#FBBC05"
-                />
-                <path
-                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
-                  fill="#EA4335"
-                />
-              </svg>
-              Sign in with Google
-            </button>
-          </div>
+        <div className="hidden lg:block flex-1">
+          <img
+            className="w-full max-h-[100vh] object-cover"
+            alt="Login illustration"
+            src="https://c.animaapp.com/majiz5gqWthSjn/img/mask-group.png"
+          />
         </div>
       </div>
     </div>
