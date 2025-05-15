@@ -1,60 +1,101 @@
-import React from 'react';
+'use client'
+import { useState } from "react";
 
-export default function CoursesPage() {
+const gradeData = {
+  "Grade 01": Array(4).fill("Algebra Basics"),
+  "Grade 02": Array(4).fill("Algebra Basics"),
+};
+
+export default function EducationContentTab() {
+  const [search, setSearch] = useState("");
+  const [selectedGrade, setSelectedGrade] = useState("All");
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
-    <div className="space-y-6">
-      <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-gray-900">Courses</h1>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-          Create New Course
-        </button>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Course Card Template */}
-        <div className="bg-white rounded-lg shadow overflow-hidden">
-          <div className="p-6">
-            <div className="flex justify-between items-start">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">Course Title</h3>
-                <p className="mt-1 text-sm text-gray-500">Course Description</p>
+    <div className="p-6">
+      {/* Top Controls */}
+      <div className="flex flex-wrap justify-between items-center mb-6 gap-2">
+        <input
+          type="text"
+          placeholder="Search Courses"
+          className="border border-gray-300 rounded-full px-4 py-2 w-[280px] focus:outline-none"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <div className="flex items-center gap-4">
+          <select
+            className="border border-gray-300 rounded-full px-4 py-2 focus:outline-none"
+            value={selectedGrade}
+            onChange={(e) => setSelectedGrade(e.target.value)}
+          >
+            <option value="All">Grade Level</option>
+            <option value="Grade 01">Grade 01</option>
+            <option value="Grade 02">Grade 02</option>
+          </select>
+          <div className="relative">
+            <button
+              onClick={() => setShowDropdown(!showDropdown)}
+              className="bg-indigo-500 text-white rounded-full px-6 py-2 font-semibold"
+            >
+              + Add
+            </button>
+            {showDropdown && (
+              <div className="absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg z-10">
+                {["Course", "Exercise", "Quiz"].map((item) => (
+                  <div
+                    key={item}
+                    className="px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer"
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
-              <span className="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
-                Active
-              </span>
-            </div>
-            
-            <div className="mt-4 space-y-2">
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Students</span>
-                <span className="font-medium">0</span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Duration</span>
-                <span className="font-medium">12 weeks</span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Price</span>
-                <span className="font-medium">$99.99</span>
-              </div>
-            </div>
-
-            <div className="mt-6 flex space-x-2">
-              <button className="flex-1 px-4 py-2 text-sm text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50">
-                Edit
-              </button>
-              <button className="flex-1 px-4 py-2 text-sm text-red-600 border border-red-600 rounded-lg hover:bg-red-50">
-                Delete
-              </button>
-            </div>
+            )}
           </div>
         </div>
-
-        {/* Empty State */}
-        <div className="col-span-full bg-white rounded-lg shadow p-6 text-center">
-          <p className="text-gray-500">No courses available. Create your first course to get started.</p>
-        </div>
       </div>
+
+      {/* Course Groups */}
+      {Object.entries(gradeData)
+        .filter(([grade]) => selectedGrade === "All" || selectedGrade === grade)
+        .map(([grade, courses]) => (
+          <div key={grade} className="mb-10">
+            <h2 className="text-xl font-semibold mb-4">{grade}</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {courses.map((title, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white rounded-xl shadow border overflow-hidden"
+                >
+                  <div className="relative">
+                    <img
+                      src="https://via.placeholder.com/300x180?text=Online+English+Lessons"
+                      alt={title}
+                      className="w-full h-40 object-cover"
+                    />
+                    <span className="absolute top-2 right-2 bg-white text-xs px-2 py-1 rounded-full shadow text-gray-700 font-medium">
+                      Mathematics
+                    </span>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-sm">{title}</h3>
+                    <p className="text-xs text-gray-400 mt-1">
+                      ⏱ Last Update 2 Days Ago
+                    </p>
+                    <div className="mt-4 flex justify-between items-center">
+                      <button className="border border-gray-300 text-gray-600 rounded px-3 py-1 text-sm">
+                        Delete
+                      </button>
+                      <button className="bg-indigo-500 text-white rounded px-4 py-1 text-sm">
+                        Edit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
     </div>
   );
-} 
+}
